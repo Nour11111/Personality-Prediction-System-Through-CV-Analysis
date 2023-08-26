@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Prediction</title>
+</head>
+<body>
+    <h1>Personality Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="openness">Openness (1-5):</label>
+        <input type="number" name="openness" min="1" max="5" required><br>
+        
+        <label for="neuroticism">Neuroticism (1-5):</label>
+        <input type="number" name="neuroticism" min="1" max="5" required><br>
+        
+        <label for="conscientiousness">Conscientiousness (1-5):</label>
+        <input type="number" name="conscientiousness" min="1" max="5" required><br>
+        
+        <label for="agreeableness">Agreeableness (1-5):</label>
+        <input type="number" name="agreeableness" min="1" max="5" required><br>
+        
+        <label for="extraversion">Extraversion (1-5):</label>
+        <input type="number" name="extraversion" min="1" max="5" required><br>
+        
+        <label for="resume">Upload Resume:</label>
+        <input type="file" name="resume" accept=".txt,.doc,.docx,.pdf" required><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
